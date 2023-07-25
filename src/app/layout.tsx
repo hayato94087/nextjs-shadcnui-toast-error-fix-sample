@@ -1,4 +1,5 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="">{children}</body>
+      <body>
+        <main>{children}</main>
+        <Toaster />
+      </body>
     </html>
   );
 }
